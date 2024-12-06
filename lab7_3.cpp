@@ -1,9 +1,14 @@
 #include<iostream>
 using namespace std;
 
+//ไม่ต้องเติม function main()
+
 char before(char x){
-	//Write your function definition here
+    if(x < 'A' || x > 'Z') return '0';
+    if(x == 'A') return 'Z';
+    return x - 1;
 }
+
 
 int main(){
 	//Test Case
